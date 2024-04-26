@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./less/style.css">
+    <link rel="stylesheet/less" type="text/css" href="./less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-
+    MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</head>
+<body> 
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/purdue.webp" style="width: 70px; height: 60px; border-radius: 25px"/>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://polytechnic.purdue.edu/degrees/computer-and-information-technology">Info</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://polytechnic.purdue.edu/departments/computer-and-information-technology/directory">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+
+    <!-- Main Content -->
+    <div class="container" id="cardContainer">
+        <h1>Computer Information Technology</h1>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-secondary" data-bs-toggle="modal" data-bs-target="#softwareModal">
+                    <img class="card-img-top" src="./assets/software.png" alt="Software icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Development</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-secondary" data-bs-toggle="modal" data-bs-target="#cyberModal">
+                    <img class="card-img-top" src="./assets/cyber.png" alt="Cybersecurity icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Cybersecurity</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-secondary" data-bs-toggle="modal" data-bs-target="#dataModal">
+                    <img class="card-img-top" src="./assets/data.png" alt="Database icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Management</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-secondary" data-bs-toggle="modal" data-bs-target="#networkModal">
+                    <img class="card-img-top" src="./assets/net.png" alt="Network icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Networking</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="softwareModal" tabindex="-1" aria-labelledby="softwareModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="softwareModalLabel">Software Development</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The CIT Web and Software development concentration builds on the foundations in the Computer
+                         and Information Technology program and prepares students for careers as programmers, systems 
+                         analysts, website designers, mobile application developers, and cloud computing engineers.  
+                         Students learn how to create cutting-edge software applications, manage projects, collaborate 
+                         with their peers, generate and exchange data, and successfully interact with users.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="cyberModal" tabindex="-1" aria-labelledby="cyberModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cyberModalLabel">Cybersecurity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Students in the CIT Information Security concentration are prepared for an in-demand career 
+                        in the development, monitoring, and maintenance of secure systems.  The concentration builds on 
+                        the foundations in the Computer and Information Technology program and prepares students for 
+                        careers as data security professionals, white hat hackers, project managers, and industry leaders 
+                        in cybersecurity implementation and design.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dataModalLabel">Data Management</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The CIT Data Management concentration builds on the foundations in the Computer and 
+                        Information Technology program and prepares students for careers as data analysts, developers, 
+                        and information science professionals.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="networkModal" tabindex="-1" aria-labelledby="networkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="networkModalLabel">Networking</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Students in the CIT Networking Systems concentration learn how to design, build, and secure 
+                        the networks on which modern life depends.  The concentration builds on the foundations in the 
+                        Computer and Information Technology program and prepares students for careers as network analysts 
+                        and project managers.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modals -->
+
+        <!-- Accordian -->
+        <div class="container" id="careerContainer">
+            <h1>Careers</h1>
+            <div class="accordion" id="careers">
+                <!-- Accordion items -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Software/Web Developer
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong>  25% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $115,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3820905629">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Network Administrator & Architect
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 2% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $95,360 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Majority of work is done in office with some remote opportunities</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3905573682">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Cybersecurity Expert & Analyst
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 32% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $120,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3904994281">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Data Scientist & Analyst
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 8% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $117,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3905990306">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Technical Writers & Designers
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 16% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $92,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3893705277">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            Game & Mobile Developer
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 22% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $70,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3905876645">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            Tech Consultant
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#careers">
+                        <div class="accordion-body">
+                            <p><strong>Occupation Outlook:</strong> 9% growth between 2022 and 2032</p>
+                            <br>
+                            <p><strong>Average Pay:</strong> $89,000 per year</p>
+                            <br>
+                            <p><strong>Flexibility:</strong> Able to work in office or remote</p>
+                            <br>
+                            <a href="https://www.linkedin.com/jobs/view/3904391774">LinkedIn Posting</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accordians -->
+
+        <!-- Quiz Button -->
+        <div class="container" id="quizButton">
+            <a href="quiz.html" class="btn btn-primary quiz-button">Take A Quiz</a>
+        </div>
+        <!-- End Quiz Button -->
+
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="footer-content">
+            <div id="quote">
+                Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important.
+                <br>
+                ~ Bill Gates
+            </div>
+            <div id="copyright">
+                © 2024 Copyright: Areeb Shaikh
+            </div>
+        </div>
+    </footer>    
+    <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,339 @@
+@purdue_black: #000000;
+@purdue_gold: #CEB888;
+@purdue_white: #FFFFFF;
+@purdue_grey: #9D968D;
+@purdue_darkGrey: #6f727b;
+
+html body {
+    background-color: lighten(@purdue_grey, 25%);
+}
+
+nav {
+    background-color: @purdue_black;
+
+    .nav-link {
+        color: @purdue_white;
+        margin-inline: 10px;
+        font-size: 20px;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        color: @purdue_white;
+    }
+    
+    .nav-link:hover::after {
+        background-color: @purdue_white;
+    }
+
+    .navbar-toggler {
+        background-color: @purdue_grey;
+    }
+}
+
+
+#cardContainer {
+    margin-top: 50px;
+    margin-inline: auto;
+    background-color: #212529;
+    border-radius: 10px;
+    padding-block: 1px;
+    
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        color: @purdue_white;
+    }
+
+    .row {
+        margin-block: 30px;
+    }
+
+    .card {
+        margin: auto;
+        height: 20rem;
+        width: 30rem;
+        background-color: @purdue_gold;
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        border-radius: 15px;
+        transition: ease-out 200ms;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: ease-in 200ms;
+        }
+
+        .card-img-top {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card-title {
+                margin-bottom: 70px;
+            }
+        }
+        
+    }
+}
+
+.modal-content {
+    .modal-header {
+        background-color: @purdue_black;
+        color: @purdue_gold;
+    }
+}
+
+#careerContainer {
+    margin-top: 100px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #careerContainer {
+        padding: 50px 0;
+    }
+
+    .accordion-item {
+        margin-bottom: 20px;
+        border: 2px solid @purdue_black;
+        border-radius: 8px;
+        background-color: @purdue_darkGrey; 
+    }
+    
+    .accordion-header {
+        padding: 10px 15px;
+        cursor: pointer;
+        background-color: @purdue_darkGrey; 
+    }
+    
+    .accordion-header button {
+        font-weight: bold;
+        color: #212529;
+        background-color: @purdue_white;
+        border-radius: 10px;
+    }
+    
+    .accordion-body {
+        margin: auto;
+        background-color: @purdue_darkGrey;
+        color: @purdue_white; 
+
+        a {
+            color: lighten(@purdue_gold, 10%);
+            font-size: large;
+        }
+    }
+    
+}
+
+#quizButton {
+    margin-top: 50px;
+
+    a {
+        border: 1px solid @purdue_black;
+    }
+}
+
+/* Ensuring the footer takes full width */
+footer {
+    margin-top: 60px;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #quote {
+        margin-top: 10px;
+    }
+
+    #copyright {
+        margin-top: 80px;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+    padding: 20px;
+    background-color: @purdue_gold;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-inline: auto;
+    margin-top: 30px;
+    width: 80%;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: @purdue_white;
+    }
+    
+    #question-container {
+        margin-bottom: 20px;
+    }
+    
+    #question {
+        font-size: 18px;
+        font-weight: bold;
+        color: @purdue_black;
+        text-align: center;
+    }
+    
+    #answer {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    #question-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .qBtn {
+        width: 90%;
+        padding: 10px;
+        margin-inline: auto;
+        margin-block: 8px;
+        font-size: 16px;
+        text-align: center;
+        background-color: @purdue_white;
+        color: @purdue_black;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    #check {
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        background-color: @purdue_black;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    #check:hover{
+        background-color: @purdue_darkGrey;
+    }
+    
+    .qBtn:hover {
+        background-color: lighten(@purdue_grey, 20%);
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    #cardContainer .card {
+        height: 20rem;
+        width: 25rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #cardContainer {
+        .card {
+            height: 15rem;
+            width: 18rem;
+            padding-top: 0px;
+        }
+
+        .card-img-top {
+            scale: .6;
+        }
+
+        .card-title {
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #cardContainer {
+        .card {
+            height: 10rem;
+            width: 13rem;
+        }
+
+        .col-md-6 {
+            width: 50%;
+            max-width: 50%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-img-top {
+            scale: .45;
+            position: relative;
+            bottom: 40px;
+        }
+
+        .card-title {
+            position: relative;
+            bottom:90px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    #cardContainer {
+        .card {
+            height: 7rem;
+            width: 8.5rem;
+        }
+
+        .card-img-top {
+            scale: .25;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .card-title {
+            position: relative;
+            bottom: 130px;
+            font-size: 9px;
+        }
+    }
+}
