@@ -22,5 +22,5 @@ display various careers, I chose to use accordions. This would allow me to creat
 information about each occupation. Finally, for the quiz page, I utilized BootStrap button classes to create the questions.
 This way, the user can click to view the button and then proceed to check their answer. 
 
-- Accessibility: As for accessibility, I made sure to utilize tags such as <nav> and <footer>. Furthermore, for the modals,
+- Accessibility: As for accessibility, I made sure to utilize tags such as '<nav>' and '<footer>'. Furthermore, for the modals,
 accordions, and some buttons, I used aria content to make sure that my page would be accessible to those using screen readers. 
